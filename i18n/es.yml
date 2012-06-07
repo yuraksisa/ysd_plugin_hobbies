@@ -1,0 +1,11 @@
+profile_form:
+  hobbies:
+    title: Aficiones
+    i_love_to: Me encanta
+    i_like_to: Me gusta
+    i_dont_like_to: No me gusta
+profile:
+  hobbies:
+    i_love_to: Me encanta
+    i_like_to: Me gusta
+    i_dont_like_to: No me gusta

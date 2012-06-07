@@ -1,0 +1,11 @@
+profile_form:
+  hobbies:
+    title: Hobbies
+    i_love_to: I love to
+    i_like_to: I like to
+    i_dont_like_to: I don't like to
+profile:
+  hobbies:
+    i_love_to: I love to
+    i_like_to: I like to
+    i_dont_like_to: I don't like to
