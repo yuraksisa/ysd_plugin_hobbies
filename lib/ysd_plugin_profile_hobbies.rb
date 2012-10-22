@@ -1,4 +1,0 @@
-require 'ysd_plugin_profile_hobbies_model'
-require 'ysd_plugin_profile_hobbies_extension'
-require 'ysd_plugin_profile_hobbies_middleware'
-require 'ysd_plugin_profile_hobbies_init'
