@@ -1,0 +1,14 @@
+     <div id="hobbies_form">
+          <div class="formrow">
+            <label for="hobbies_i_love_to" class="fieldtitle"><%= t.hobbies_form.i_love_to %></label>
+            <input type="text" name="hobbies_i_love_to" id="hobbies_i_love_to" maxlength="80" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.hobbies_i_love_to%>" <%% } %> />
+          </div>        
+          <div class="formrow">
+            <label for="hobbies_i_like_to" class="fieldtitle"><%= t.hobbies_form.i_like_to %></label>
+            <input type="text" name="hobbies_i_like_to" id="hobbies_i_like_to" maxlength="80" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.hobbies_i_like_to%>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="hobbies_i_dont_like_to" class="fieldtitle"><%= t.hobbies_form.i_dont_like_to %></label>
+            <input type="text" name="hobbies_i_dont_like_to" id="hobbies_i_dont_like_to" maxlength="80" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.hobbies_i_dont_like_to%>" <%% } %> />
+          </div>
+     </div>                  

@@ -1,11 +1,11 @@
-profile_form:
-  hobbies:
-    title: Aficions
-    i_love_to: M'encanta
-    i_like_to: M'agrada
-    i_dont_like_to: No m'agrada
-profile:
-  hobbies:
-    i_love_to: M'encanta
-    i_like_to: M'agrada
-    i_dont_like_to: No m'agrada
+aspect:
+  hobbies: Aficions
+hobbies_form:
+  title: Aficions
+  i_love_to: M'encanta
+  i_like_to: M'agrada
+  i_dont_like_to: No m'agrada
+hobbies:
+  i_love_to: M'encanta
+  i_like_to: M'agrada
+  i_dont_like_to: No m'agrada

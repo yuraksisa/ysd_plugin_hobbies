@@ -1,3 +1,6 @@
+require 'ysd_md_fieldset_hobbies'
+require 'ysd_plugin_hobbies_aspect'
+require 'ui/ysd_ui_fieldset_render' unless defined?UI::FieldSetRender
 require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
 
 #
@@ -6,33 +9,24 @@ require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
 module Huasi
   class HobbiesExtension < Plugins::ViewListener
   
-    # ---------------- Profile Hooks -------------------------      
-          
+    # ========= Aspects ==================
+    
     #
-    # Adds fields to edit the hobbies information in the profile form
+    # Retrieve an array of the aspects defined in the plugin
     #
-    def profile_form(context={})
-
+    # The attachment aspect (complement)
+    #
+    def aspects(context={})
+      
       app = context[:app]
       
-      renderer = UI::FieldSetRender.new('hobbies', app)      
-      location_form = renderer.render('form')        
-    
-    end
-    
-    #
-    # Shows the hobbies information in the profile
-    #
-    def profile(context={}) 
-    
-      app = context[:app]
-    
-      renderer = UI::FieldSetRender.new('hobbies', app)      
-      location_template = renderer.render('view')
-        
+      aspects = []
+      aspects << ::Plugins::Aspect.new(:hobbies, app.t.aspect.hobbies, FieldSet::Hobbies, HobbiesAspectDelegate.new)
+                                               
+      return aspects
+       
     end    
 
-    
   
-  end #ProfileEducationAndEmploymentExtension
+  end #HobbiesExtension
 end #Huasi
